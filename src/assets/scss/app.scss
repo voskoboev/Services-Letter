@@ -1,0 +1,181 @@
+@import "settings";
+@import "foundation-emails";
+
+@import "template/template";
+
+// body {
+//   background-color: #fff;
+// }
+
+.header {
+  .header__columns {
+    padding-top: 40px;
+  }
+
+  .header__link {
+    opacity: 0.6;
+    color: #9c9c9c;
+    font-family: "Arial";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: underline;
+  }
+
+  .header__logo-img {
+    margin-top: 45px;
+    margin-bottom: 18px;
+    width: 190px;
+    height: 30px;
+  }
+
+  .header__text {
+    color: #202020;
+    font-family: "Book Antiqua";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 30px;
+  }
+
+  .header__wide {
+    background-color: #000;
+  }
+
+  // .header__menu-item.first {
+  //   color: yellow;
+  // }
+
+  .header__menu-cols {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .header__menu-item--first a {
+    color: #ffd44c !important;
+  }
+
+  .header__menu-item--last {
+    border-left: 1px solid #555555;
+    // padding-left: 30px;
+    // margin-left: 30px;
+
+    // float: right;
+    // width: 350px;
+  }
+
+  .header__menu-item--last p {
+    margin-top: 7px;
+  }
+
+  .header__menu-item {
+    height: 40px;
+    vertical-align: middle;
+
+    font-family: "Arial MT";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .header__menu-item a:hover {
+    color: #ffd44c;
+  }
+
+  .header__menu-img {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-top: 7px; // ?
+  }
+}
+
+.hero {
+  .hero__row {
+    background: url(../assets/img/hammer.jpg) no-repeat;
+    width: 1000px;
+  }
+
+  .hero__cols {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    width: 580px;
+
+    // background: transparent;
+
+    // background: url(../assets/img/hammer.jpg);
+  }
+
+  .hero__explain {
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .hero__title {
+    color: #ffffff;
+    font-family: "Book Antiqua";
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 46px;
+  }
+}
+
+.attempt {
+  .attempt__cols {
+    padding-top: 40px;
+  }
+
+  .attempt__text {
+    color: #212121;
+    font-family: "Helvetica";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .attempt__text--greeting {
+    margin-bottom: 20px;
+  }
+
+  .attempt__text--main {
+    margin-bottom: 50px;
+  }
+
+  .attempt__btn {
+    margin-bottom: 60px;
+  }
+}
+
+.features {
+  .features__title {
+  }
+
+  .features__item {
+    // display: inline-block;
+  }
+
+  .features__number {
+    color: #ffd44c;
+    font-family: "Book Antiqua";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .features__text {
+
+    color: #212121;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 18px;
+
+  }
+}
