@@ -4,7 +4,7 @@ subject: My Basic Email Template Subject
 
 <wrapper class="header">
   <container>
-    <row>
+    <row class="header__row">
       <columns class="header__columns">
         <center>
           <a class="header__link" href="#">
@@ -22,7 +22,7 @@ subject: My Basic Email Template Subject
     <container>
       <row>
         <columns class="header__menu-cols">
-          <menu class="header__menu">
+          <menu class="small-vertical header__menu">
             <item class="header__menu-item header__menu-item--first" href="#">
               О портале
             </item>
@@ -37,9 +37,9 @@ subject: My Basic Email Template Subject
             </item>
             <item class="header__menu-item header__menu-item--last" valign="middle" href="#">
               <img class="header__menu-img" src="../assets/img/phone.png" alt="phone">
-              <p style="color: #fff">
-                7 (495) 374-61-72
-              </p>
+              <a href="tel:+74953746172" class="header__tel">
+                +7 (495) 374-61-72
+              </a>
             </item>
           </menu>
         </columns>
@@ -48,24 +48,23 @@ subject: My Basic Email Template Subject
   </div>
 </wrapper>
 
-<!-- <wrapper class="hero" background="../assets/img/hammer.jpg"> -->
 <wrapper class="hero">
-  <container>
+  <container class="hero__container">
     <row class="hero__row">
       <columns></columns>
       <columns class="hero__cols">
-        <h3 class="hero__explain">
-          Путеводитель
-        </h3>
-        <h1 class="hero__title">
-          Большой курс <br>
-          по банкротству
-        </h1>
+        <calluot>
+          <h3 class="hero__explain">
+            Путеводитель
+          </h3>
+          <h1 class="hero__title">
+            Большой курс <br>
+            по банкротству
+          </h1>
+        </calluot>
       </columns>
       <columns></columns>
     </row>
-
-
   </container>
 </wrapper>
 
@@ -83,7 +82,7 @@ subject: My Basic Email Template Subject
           15 р. за кг. Договор заключён 29 марта 2016 г. На поставку 40 дней.
         </p>
         <center>
-          <button class="large primary attempt__btn" href="#">Подробнее о курсе</button>
+          <a class="attempt__btn" href="#">Подробнее о курсе</a>
         </center>
       </columns>
     </row>
@@ -94,36 +93,59 @@ subject: My Basic Email Template Subject
   <container>
     <row>
       <columns large="12">
-        <h2 class="features__title">
+        <h2 class="features__title title--secondary">
           Фишки курса
         </h2>
       </columns>
     </row>
-    <row>
+    <row class="collapse features__row--lower">
       <columns>
         <div class="features__item">
-          <span class="features__number">1.</span>
-          <span class="features__text">
-            Доступ предоставляется
-            навсегда
-          </span>
+          <row>
+            <columns class="features__number" large="1" small="2">
+              1.
+            </columns>
+            <columns class="features__text" large="11" small="10">
+              Доступ предоставляется
+              навсегда
+            </columns>
+          </row>
         </div>
         <div class="features__item">
-          <span class="features__number">2.</span>
-          Записи и материалы
-          по теме остаются у вас
+          <row>
+            <columns class="features__number" large="1" small="2">
+              2.
+            </columns>
+            <columns class="features__text" large="11" small="10">
+              Записи и материалы
+              по теме остаются у вас
+            </columns>
+          </row>
         </div>
       </columns>
       <columns>
         <div class="features__item">
-          <span class="features__number">3.</span>
-          <span>Видео формат на 11 часов</span>
+          <row>
+            <columns class="features__number" large="1" small="2">
+              3.
+            </columns>
+            <columns class="features__text" large="11" small="10">
+              Видео формат на 11 часов
+            </columns>
+          </row>
         </div>
         <div class="features__item">
-          <span class="features__number">4.</span>
-          Ответы на вопрос после курса <br>
-          <span>Отвечают авторы курса
-          </span>
+          <row>
+            <columns class="features__number" large="1" small="2">
+              4.
+            </columns>
+            <columns class="features__text" large="11" small="10">
+              Ответы на вопрос после курса <br>
+              <span class="features__text-span">
+                Отвечают авторы курса
+              </span>
+            </columns>
+          </row>
         </div>
       </columns>
     </row>
@@ -131,16 +153,218 @@ subject: My Basic Email Template Subject
 </wrapper>
 
 
-<!-- 
-<wrapper>
-  <container>
-    <row>
-      <columns>
 
+<wrapper class="meetings">
+  <container>
+
+    <row>
+      <!-- <columns large="12" class="meetings__column--upper"> -->
+      <columns large="12">
+        <h2 class="meetings__title title--secondary">
+          Онлайн-встречи
+        </h2>
+      </columns>
+    </row>
+
+    <row class="">
+      <columns class="">
+        <div class="meetings__item">
+          <p class="meetings__date">
+            23 января
+          </p>
+          <p class="meetings__text">
+            Оспаривание сделок при банкростве:
+            преимущественное удовлетворение
+            кредитора.
+          </p>
+          <a class="meetings__btn meetings__btn--bordered" href="#">
+            Оставить заявку
+          </a>
+
+        </div>
+
+      </columns>
+      <columns class="">
+        <div class="meetings__item">
+          <p class="meetings__date">
+            23 января
+          </p>
+          <p class="meetings__text">
+            Оспаривание сделок при банкростве:
+            преимущественное удовлетворение
+            кредитора.
+          </p>
+          <a class="meetings__btn meetings__btn--bordered" href="#">
+            Заказать курс
+          </a>
+        </div>
+      </columns>
+    </row>
+
+    <row class="">
+      <columns class="">
+        <div class="meetings__item">
+          <p class="meetings__date">
+            23 января
+          </p>
+          <p class="meetings__text">
+            Оспаривание сделок при банкростве:
+            преимущественное удовлетворение
+            кредитора.
+          </p>
+          <a href="#" class="meetings__btn meetings__btn--underlined">
+            Оставить заявку
+          </a>
+        </div>
+      </columns>
+      <columns class="">
+        <div class="meetings__item">
+          <p class="meetings__date">
+            23 января
+          </p>
+          <p class="meetings__text">
+            Оспаривание сделок при банкростве:
+            преимущественное удовлетворение
+            кредитора.
+          </p>
+          <a href="#" class="meetings__btn meetings__btn--underlined">
+            Заказать курс
+          </a>
+        </div>
       </columns>
     </row>
   </container>
-</wrapper> -->
+</wrapper>
+
+
+<wrapper class="testimonials">
+  <container>
+
+    <row>
+      <columns>
+        <h2 class="testimonials__title title--secondary">
+          Отзывы
+        </h2>
+      </columns>
+    </row>
+
+    <row class="testimonials__row--center">
+      <columns>
+        <columns large="5" small="12">
+          <!-- <center> -->
+          <img class="testimonials__img" src="../assets/img/client.jpg" alt="client">
+          <!-- </center> -->
+        </columns>
+        <columns large="7" small="12">
+          <p class="small-text-center testimonials__client-name">
+            Амаль Клуни
+          </p>
+          <p class="small-text-center testimonials__client-status">
+            Британский юрист
+          </p>
+          <!-- <center> -->
+          <row>
+            <columns>
+              <div class="testimonials__img-wrapper">
+                <img class="testimonials__star-img" src="../assets/img/star.png" alt="star">
+                <img class="testimonials__star-img" src="../assets/img/star.png" alt="star">
+                <img class="testimonials__star-img" src="../assets/img/star.png" alt="star">
+                <img class="testimonials__star-img" src="../assets/img/star.png" alt="star">
+                <img class="testimonials__star-img" src="../assets/img/star.png" alt="star">
+              </div>
+            </columns>
+          </row>
+
+          <!-- </center> -->
+        </columns>
+      </columns>
+      <columns>
+        <p class="small-text-center testimonials__text">
+          Среди клиентов Амаль Клуни — основатель WikiLeaks Джулиан Ассанж, бывший премьер-министр Украины Юлия
+          Тимошенко, бывший президент Мальдивской Республики Мохамед Нашид, азербайджанская журналистка Хадиджа
+          Исмаилова, египетско-канадский журналист Мохамед Фахми и другие известные персоны.
+        </p>
+      </columns>
+    </row>
+
+    <row class="testimonials__row--lower">
+      <columns>
+        <center>
+          <a class="testimonials__btn" href="#">
+            Подробнее о курсе
+          </a>
+        </center>
+      </columns>
+    </row>
+
+  </container>
+</wrapper>
+
+
+<wrapper class="speaker">
+  <container>
+    <row class="speaker__row">
+      <columns large="3">
+        <center>
+          <img class="speaker__img" src="../assets/img/speaker.jpg" alt="">
+        </center>
+      </columns>
+      <columns large="6">
+        <p class="small-text-center speaker__name">
+          Андрей Егоров
+        </p>
+        <p class="small-text-center speaker__text">
+          Кандидат юридических наук, профессор, директор
+          Российской школы частного права, арбитр МКАС,
+          действительный государственный советник юстиции
+          2 класса
+        </p>
+      </columns>
+      <columns large="3">
+        <center>
+          <img class="speaker__sign-img" src="../assets/img/sign.png" alt="sign">
+        </center>
+      </columns>
+    </row>
+  </container>
+</wrapper>
+
+<wrapper class="socials">
+  <row class="socials__row">
+    <columns class="socials__cols">
+      <center>
+        <a href="#" class="socials__link">
+          <img src="../assets/img/fb.png" alt="" class="socials__img">
+        </a>
+        <a href="#" class="socials__link">
+          <img src="../assets/img/vk.png" alt="" class="socials__img">
+        </a>
+        <a href="#" class="socials__link">
+          <img src="../assets/img/inst.png" alt="" class="socials__img">
+        </a>
+        <a href="#" class="socials__link">
+          <img src="../assets/img/youtube.png" alt="" class="socials__img">
+        </a>
+      </center>
+    </columns>
+  </row>
+</wrapper>
+
+<wrapper class="footer">
+  <container>
+    <row class="footer__row">
+      <columns class="footer__cols">
+        <p class="footer__text">
+          Вы получили это письмо, так как оставили свой электронный адрес на сайте <a class="footer__link"
+            href="#">Lextorium.ru</a>
+          и подтвердили согласие на получение емейл-рассылки. <a class="footer__link" href="#">Отпишитесь</a>, если не
+          хотите получать важные
+          новости и предложения.
+        </p>
+      </columns>
+    </row>
+  </container>
+</wrapper>
 
 
 

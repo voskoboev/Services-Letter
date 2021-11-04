@@ -12,7 +12,6 @@
 //   7. Menu
 //   8. Thumbnail
 
-
 // 1. Global
 // ---------
 // $accent-color: #93bf3d;
@@ -30,9 +29,9 @@ $white: #fefefe;
 $pre-color: #ff6908;
 // $global-width: 580px;
 $global-width: 580px;
-$global-width-small: 95%;
-$global-gutter: 0px; // 16
-$body-background: $light-gray;
+$global-width-small: 100%; // 95
+$global-gutter: 10px; // 16
+$body-background: $white;
 $container-background: $white;
 $global-padding: 0px; // 16
 $global-margin: 0px; // 16
