@@ -24,17 +24,16 @@ $alert-color: #ec5840;
 $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+$black: #000;
+$white: #ffffff;
 $pre-color: #ff6908;
-// $global-width: 580px;
 $global-width: 580px;
 $global-width-small: 100%; // 95
-$global-gutter: 10px; // 16
+$global-gutter: 0px; // 16
 $body-background: $white;
 $container-background: $white;
-$global-padding: 0px; // 16
-$global-margin: 0px; // 16
+$global-padding: 0; // 16
+$global-margin: 0; // 16
 $global-radius: 3px;
 $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;
