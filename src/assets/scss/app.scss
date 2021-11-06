@@ -8,18 +8,27 @@ $minor-font: Helvetica, sans-serif;
 $accent-color: #ffd44c;
 $dark-color: #212121;
 
+@mixin margin-0-auto {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin border($color) {
+  border: {
+    width: 1px;
+    style: solid;
+    color: $color;
+  }
+}
+
 html {
   box-sizing: border-box;
-  overflow: auto;
 }
 
 * {
   box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 .title {
@@ -92,20 +101,16 @@ body {
   .header__menu-item {
     vertical-align: middle;
     height: 40px;
+    padding: 5px !important;
     font-family: $primary-font;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-
-    padding: 5px !important;
+    color: $white;
 
     @media screen and (max-width: $global-breakpoint) {
       height: auto;
     }
-  }
-
-  .header__menu-item a:hover {
-    color: $accent-color;
   }
 
   .header__menu-item--first a {
@@ -156,17 +161,19 @@ body {
   .hero__container {
     width: 100%;
     max-width: 1000px;
-    background: url("https://i.ibb.co/c3CLpVh/hammer.jpg") no-repeat;
+    background: url("https://i.ibb.co/c3CLpVh/hammer.jpg");
+    background-repeat: no-repeat;
+    background-color: $black;
     background-position: center top;
     background-size: cover;
-
   }
 
   .hero__cols {
+    @include margin-0-auto;
+
     display: block;
     width: 580px;
     padding-top: 80px;
-    margin: 0 auto;
   }
 
   .hero__explain {
@@ -211,12 +218,13 @@ body {
   }
 
   .attempt__btn {
+    @include border($primary-color);
+
     display: block;
     width: 270px;
-    height: 50px;
     padding-top: 15px;
+    padding-bottom: 15px;
     background-color: $primary-color;
-    border: 1px solid $primary-color;
     border-radius: 2px;
     text-align: center;
     font-family: $secondary-font;
@@ -224,16 +232,6 @@ body {
     font-weight: 700;
     line-height: 30px;
     color: $white;
-
-    &:hover {
-      background-color: $white;
-      color: $primary-color;
-    }
-
-    &:active {
-      background-color: $primary-color;
-      border: 1px solid $primary-color;
-    }
   }
 }
 
@@ -323,12 +321,14 @@ body {
   }
 
   .meetings__btn--bordered {
+    @include border($primary-color);
+
     display: block;
     width: 255px;
-    height: 50px;
     padding-top: 15px;
+    padding-bottom: 15px;
     background-color: $white;
-    border: 1px solid $primary-color;
+    background-color: transparent;
     text-align: center;
     font-family: $secondary-font;
     font-size: 20px;
@@ -336,17 +336,7 @@ body {
     line-height: 30px;
 
     @media screen and (max-width: $global-breakpoint) {
-      margin: 0 auto;
-    }
-
-    &:hover {
-      background-color: $primary-color;
-      color: $white;
-    }
-
-    &:active {
-      color: $primary-color;
-      background-color: $white;
+      @include margin-0-auto;
     }
   }
 
@@ -361,7 +351,8 @@ body {
     text-decoration: underline;
 
     @media screen and (max-width: $global-breakpoint) {
-      margin: 0 auto;
+      @include margin-0-auto;
+
       text-align: center !important;
     }
   }
@@ -396,9 +387,10 @@ body {
   }
 
   .testimonials__img {
+    @include margin-0-auto;
+
     width: 96px;
     height: 96px;
-    margin: 0 auto;
     margin-bottom: 10px;
   }
 
@@ -429,11 +421,11 @@ body {
   }
 
   .testimonials__img-wrapper {
+    display: inline-block;
+
     @media screen and (max-width: $global-breakpoint) {
       text-align: center;
     }
-
-    display: inline-block;
   }
 
   .testimonials__star-img {
@@ -441,12 +433,13 @@ body {
   }
 
   .testimonials__btn {
+    @include border($primary-color);
+
     display: block;
     width: 380px;
-    height: 50px;
     padding-top: 15px;
+    padding-bottom: 15px;
     background-color: $primary-color;
-    border: 1px solid $primary-color;
     border-radius: 2px;
     text-align: center;
     font-family: $secondary-font;
@@ -455,14 +448,8 @@ body {
     line-height: 30px;
     color: $white;
 
-    &:hover {
-      background-color: $white;
-      color: $primary-color;
-    }
-
-    &:active {
-      color: $white;
-      background-color: $primary-color;
+    @media screen and (max-width: $global-breakpoint) {
+      width: 270px !important;
     }
   }
 }
@@ -529,7 +516,10 @@ body {
   }
 
   .footer__text {
-    margin: 20px 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-family: $primary-font;
     font-size: 12px;
     font-weight: 400;
